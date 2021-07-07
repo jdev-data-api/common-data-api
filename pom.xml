@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.jdev.common</groupId>
+	<artifactId>common-data-api</artifactId>
+	<version>21.7.1.0-SNAPSHOT</version>
+
+	<name>common-data-api</name>
+
+	<parent>
+		<groupId>com.jdev</groupId>
+		<artifactId>parent-data-api</artifactId>
+		<version>21.7.1.0</version>
+	</parent>
+
+	<packaging>pom</packaging>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.release>11</maven.compiler.release>
+	</properties>
+
+	<modules>
+		<module>c-util</module>
+		<module>c-domain</module>
+		<module>c-exception</module>
+	</modules>
+
+	<distributionManagement>
+		<repository>
+			<id>central</id>
+			<name>localhost.local-releases</name>
+			<url>http://localhost:8081/artifactory/libs-release-local</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>localhost.local-snapshots</name>
+			<url>http://localhost:8081/artifactory/libs-snapshot-local</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+</project>
